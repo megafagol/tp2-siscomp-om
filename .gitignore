@@ -1,0 +1,16 @@
+# Object files
+*.o
+
+
+# asm files
+/*.a
+
+
+# Shared object files
+/*.so
+
+
+# VS info
+.vscode/
+
+__pycache__/
