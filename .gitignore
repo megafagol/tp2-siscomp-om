@@ -3,14 +3,16 @@
 
 
 # asm files
-/*.a
+*.a
 
 
 # Shared object files
-/*.so
+*.so
 
 
 # VS info
 .vscode/
 
 __pycache__/
+
+.gdb_history
