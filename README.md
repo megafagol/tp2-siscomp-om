@@ -101,6 +101,7 @@ python -c "import struct; print(struct.calcsize('P') * 8)"
 `/Interacion2/procesarNumero.asm`
 
 Se implementó el código correspondiente para convertir a enteros y sumar 1 al número que llega desde C, eso se hace definiendo una funcion _procesarNumero
+
 Se genera el archivo ELF 32 bits con
 
 ```bash
@@ -112,8 +113,7 @@ Generando procesarNumero.o
 ### Implementación en C
 `/Iteracion2/api.c`
 
-Se implementó el código correspondiente para llamar a la función de assembler _procesarNumero
-Se compilar el codigo en C considerando el archivo .o de assembler usando 
+Se implementó el código correspondiente para llamar a la función de assembler _procesarNumero. Se compila el codigo en C considerando el archivo .o de assembler usando 
 
 ```bash
 gcc -m32 -shared -o libApi.so procesarNumero.o api.c
@@ -124,8 +124,7 @@ Generando libApi.so
 ### Implementación en Python
 `/Iteracion2/api.py`
 
-Es el mismo código que el de la iteración 1 pero se cambia el nombre de la función por _procesarNumero que es la correspondiente a la que se definió en assembler
-Luego validando que nos encontramos en el entorno py32 creado en conda corremos
+Es el mismo código que el de la iteración 1 pero se cambia el nombre de la función por _procesarNumero que es la correspondiente a la que se definió en assembler. Luego validando que nos encontramos en el entorno py32 creado en conda corremos
 
 ```bash
 python api.py
