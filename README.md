@@ -56,6 +56,8 @@ Ejemplo
 
 ## Iteración 2
 
+![](https://github.com/megafagol/tp2-siscomp-om/blob/main/img/diagrama_de_bloques_it2.png)
+
 ### Enunciado
 
 Se debe realizar lo mismo que en la Iteración 1 pero desde el código de C se debe convocar rutinas en ensamblador para que hagan los cálculos de conversión a enteros y de sumar 1.
